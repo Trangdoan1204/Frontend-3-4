@@ -1,7 +1,11 @@
 <script> setup
+import AppHeader from "@/components/AppHeader.vue";
+
 export default {
-  
-}
+  components: {
+AppHeader,
+},
+};
 
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
@@ -20,7 +24,13 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
-  </main>
+  </main><div id="app">
+<AppHeader />
+<div class="container mt-3">
+<router-view />
+</div>
+</div>
+
 </template>
 
 <style scoped>
