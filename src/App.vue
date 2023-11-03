@@ -1,14 +1,10 @@
-<script> setup
+<script> 
 import AppHeader from "@/components/AppHeader.vue";
-
 export default {
   components: {
-AppHeader,
+  AppHeader,
 },
 };
-
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 
 </script>
 
@@ -24,10 +20,11 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
-  </main><div id="app">
-<AppHeader />
-<div class="container mt-3">
-<router-view />
+  </main>
+  <div id="app">
+    <AppHeader />
+    <div class="container mt-3">
+    <router-view />
 </div>
 </div>
 
